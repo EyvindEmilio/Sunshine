@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Clima</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_map">Location Map</string>
+    <string name="action_share">Share</string>
+
+    <string name="action_refresh" translatable="false">Refresh</string>
+    <string name="title_activity_detail">Details</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="pref_location_label" translatable = "false" >Location</string>
+    <string name="pref_location_key" translatable = "false" >location</string>
+    <string name="pref_location_default" translatable = "false" >94043</string>
+
+    <string name="pref_units_label" translateble = "false">Temperature</string>
+    <string name="pref_units_key" translateble = "false">temperature</string>
+    <string name="pref_units_default" translateble = "false">metric</string>
+    <string name="pref_units_imperial" translatable = "false">imperial</string>
+    <string name="pref_units_metric" translatable = "false">metric</string>
+    <string-array name="pref_units_values">
+        <item>@string/pref_units_metric</item>
+        <item>@string/pref_units_imperial</item>
+    </string-array>
+    <string-array name="pref_uinits_options">
+        <item>Metric</item>
+        <item>Imperial</item>
+    </string-array>
+
+</resources>
