@@ -13,6 +13,13 @@ import android.view.MenuItem;
 
 public class MainActivity extends ActionBarActivity {
     public final String LOG_TAG = getClass().getSimpleName();
+
+    @Override
+    protected void onStart() {
+        Log.w(LOG_TAG,"onStart");
+        super.onStart();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,8 +29,32 @@ public class MainActivity extends ActionBarActivity {
                     .add(R.id.container, new forecast_fragment())
                     .commit();
         }
+        Log.w(LOG_TAG,"onCreate");
     }
 
+    @Override
+    protected void onPause() {
+        Log.w(LOG_TAG,"onPause");
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+        Log.w(LOG_TAG,"onResume");
+        super.onResume();
+    }
+
+    @Override
+    protected void onDestroy() {
+        Log.w(LOG_TAG,"onDestroy");
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onStop() {
+        Log.w(LOG_TAG,"onStop");
+        super.onStop();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
