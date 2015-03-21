@@ -15,7 +15,7 @@
  *
  * Note: This file copied from the Android CTS Tests
  */
-package com.example.emilio_emilio.clima.utils;
+package com.example.emilio_emilio.clima.util;
 
 import junit.framework.Assert;
 

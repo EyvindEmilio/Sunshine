@@ -35,6 +35,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="MainActivity" />
         </activity>
+        <provider
+            android:authorities="com.example.emilio_emilio.clima"
+            android:name=".data.WeatherProvider"/>
     </application>
 
 </manifest>
